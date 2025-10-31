@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - ETM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" alt="">
+  <div class="login-container">
+    <h2>Admin Login</h2>
+     <input type="username" id="username" placeholder="Enter username">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+  </div>
+  <script>
+    function login() {
+      const pwd = document.getElementById('password').value;
+      if (pwd === 'ETM2025') {
+        window.location.href = 'home.html';
+      } else {
+        alert('Incorrect password');
+      }
+    }
+  </script>
+</body>
+</html>
